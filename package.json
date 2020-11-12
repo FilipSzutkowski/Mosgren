@@ -1,0 +1,16 @@
+{
+  "name": "mosgren",
+  "version": "1.0.0",
+  "description": "website for the norwegian band Mosgren.",
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FilipSzutkowski/Mosgren.git"
+  },
+  "author": "Filip Szutkowski",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
