@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "website for the norwegian band Mosgren.",
   "scripts": {
-    "serve": "npx @11ty/eleventy --serve"
+    "start": "npx @11ty/eleventy --serve"
   },
   "repository": {
     "type": "git",
