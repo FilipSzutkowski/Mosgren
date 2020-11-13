@@ -1,8 +1,155 @@
+:root {
+  --main-color: #006837;
+  --hover-color: #008145;
+  --background-color: #000d04;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
+body,
+html {
   font-family: 'Roboto', sans-serif;
+  height: 100%;
+  background-color: var(--background-color);
+  color: white;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 2em;
+}
+
+button {
+  transition: all 0.2s ease-out;
+}
+
+button:hover,
+button:focus,
+button:active {
+  background-color: var(--hover-color);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+main {
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+/* Navbar ---------------------------------------------------- */
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.logoNoBackground.navbarLogo {
+  width: 8%;
+}
+
+.logoNoBackground.navbarLogo a {
+  fill: white;
+  padding: 50px;
+}
+/* Landing --------------------------------------------------- */
+.landingSection {
+  background-image: url('../images/landing.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.callsToAction {
+  position: relative;
+  text-align: right;
+  top: 28em;
+  right: 5em;
+}
+
+.upcomingEventsBtn,
+.contactUsBtn {
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 2em;
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em 1.2em;
+  margin-top: 3em;
+}
+
+.upcomingEventsBtn span,
+.contactUsBtn span {
+  opacity: 90%;
+  text-shadow: #0000004d 2px 5px;
+}
+
+.upcomingEventsBtn {
+  margin-right: 1em;
+}
+
+.logoNoBackground {
+  fill: white;
+  width: 40%;
+}
+
+/* Upcoming Events --------------------------------------------------- */
+
+.upcomingEventsTitle {
+  text-align: right;
+  font-size: 4em;
+}
+
+/* Responsivness */
+
+@media screen and (max-width: 1024px) {
+  .landingSection {
+    background-position: 20%;
+  }
+
+  .callsToAction {
+    text-align: center;
+    top: 5em;
+    right: 0em;
+  }
+  .upcomingEventsBtn,
+  .contactUsBtn {
+    font-size: 1.8em;
+    margin-top: 0;
+  }
+
+  .upcomingEventsBtn {
+    margin-right: 0em;
+  }
+
+  .contactUsBtn {
+    margin-top: 1em;
+  }
+
+  .logoNoBackground {
+    width: 80%;
+    padding-bottom: 30em;
+  }
+
+  @media screen and (max-height: 800px) {
+    .logoNoBackground {
+      padding-bottom: 20em;
+    }
+  }
+
+  @media screen and (max-height: 600px) {
+    .logoNoBackground {
+      padding-bottom: 15em;
+    }
+  }
+}
+
+@media screen and (min-height: 1400px) {
+  .callsToAction {
+    top: 50em;
+  }
 }
