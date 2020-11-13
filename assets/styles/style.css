@@ -41,18 +41,51 @@ main {
 }
 /* Navbar ---------------------------------------------------- */
 nav {
+  position: sticky;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 0;
 }
 
-.logoNoBackground.navbarLogo {
-  width: 8%;
+.navbarLogo {
+  min-width: 135px;
+  max-width: 135px;
+  margin-right: auto;
 }
 
-.logoNoBackground.navbarLogo a {
+.navbarLogo a {
   fill: white;
   padding: 50px;
 }
+
+.eventsNav {
+  margin-right: 2em;
+}
+
+.eventsNav,
+.contactNav {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  opacity: 90%;
+  text-shadow: #0000004d 2px 5px;
+  transition: all 0.2s ease-out;
+}
+
+.eventsNav:hover,
+.eventsNav:focus,
+.eventsNav:active,
+.contactNav:hover,
+.contactNav:focus,
+.contactNav:active {
+  transform: scale(1.1);
+  background-color: var(--hover-color);
+}
+
 /* Landing --------------------------------------------------- */
 .landingSection {
   background-image: url('../images/landing.jpg');
