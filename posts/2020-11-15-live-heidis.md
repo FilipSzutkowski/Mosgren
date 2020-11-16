@@ -1,0 +1,11 @@
+---
+title: 'Live show på Heidis Kristiandsand!'
+thumbnail: /assets/images/thumbnails/gitar.jpg
+summary: 'Mosgren tar å fyrer opp scenen med god stemning igjen! Denne gangen blir det et fantastisk live show på Heidis Kristiandsand. Avtal med venner, spørr om tillatelse fra mamma og ta med god stemning!'
+---
+
+## MOSGREN PÅ HEIDIS
+
+Mosgren tar å fyrer opp scenen med god stemning igjen! Denne gangen blir det et fantastisk live show på Heidis Kristiandsand. Avtal med venner, spørr om tillatelse fra mamma og ta med god stemning!
+
+**21. November 2020, klokken 20:00!**
