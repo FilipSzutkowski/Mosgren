@@ -41,8 +41,6 @@ button:active {
 
 main {
   margin-top: 2em;
-  margin-right: 2em;
-  margin-left: 2em;
 }
 /* Navbar ---------------------------------------------------- */
 nav {
@@ -162,12 +160,14 @@ nav {
   text-align: left;
   max-width: min-content;
   font-weight: 300;
+  transition: all 0.2s ease-out;
 }
 
 .eventCard h3 {
   padding: 0.1em 0 0.5em 0;
   font-size: 130%;
   font-weight: 900;
+  text-shadow: #0000004d 2px 5px;
 }
 
 .eventCard h3 span {
@@ -213,7 +213,85 @@ nav {
   transform: scale(1.1);
 }
 
+.eventCard:hover,
+.eventCard:focus,
+.eventCard:active {
+  transform: scale(1.05);
+}
+
+/* Contact Us --------------------------------------------------------------- */
+#contactUs {
+  margin-top: 2em;
+}
+
+#contactUs h1 {
+  padding-top: 0.4em;
+}
+
+.contactUsWrapper {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--main-color);
+}
+
+.contactUsWrapper article {
+  text-align: center;
+  font-size: 100%;
+  padding: 2.5em;
+}
+
+.contactUsWrapper article a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  font-weight: 100;
+  font-size: 150%;
+  transition: all 0.2s ease-out;
+  margin-top: 0.3em;
+  border-radius: 5px;
+  background-color: var(--hover-color);
+}
+
+.contactUsWrapper article a:hover,
+.contactUsWrapper article a:focus,
+.contactUsWrapper article a:active {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  padding-top: 1em;
+  background-color: var(--hover-color);
+  text-align: center;
+  font-weight: 100;
+}
+
+footer p {
+  padding: 0.5em;
+}
+
+footer a {
+  color: white;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials p {
+  font-size: 120%;
+  font-weight: 300;
+}
+
 /* Responsivness */
+
+@media screen and (max-width: 1204px) {
+  .eventCard > img {
+    max-width: 300px;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .landingSection {
@@ -242,6 +320,10 @@ nav {
   .logoNoBackground {
     width: 80%;
     padding-bottom: 30em;
+  }
+
+  .events {
+    grid-template-columns: 1fr;
   }
 
   @media screen and (max-height: 800px) {
