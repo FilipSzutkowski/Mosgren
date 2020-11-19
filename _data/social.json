@@ -1,0 +1,22 @@
+[
+  {
+    "name": "instagram",
+    "iconClass": "fab fa-instagram-square",
+    "url": "#"
+  },
+  {
+    "name": "facebook",
+    "iconClass": "fab fa-facebook",
+    "url": "#"
+  },
+  {
+    "name": "spotify",
+    "iconClass": "fab fa-spotify",
+    "url": "#"
+  },
+  {
+    "name": "itunes",
+    "iconClass": "fab fa-itunes",
+    "url": "#"
+  }
+]

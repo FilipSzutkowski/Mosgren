@@ -67,16 +67,9 @@ nav {
   fill: white;
 }
 
-.eventsNav {
-  margin-right: 2em;
-}
-
-.contactNav {
-  margin-right: 2em;
-}
-
 .eventsNav,
 .contactNav {
+  margin-right: 2em;
   text-decoration: none;
   color: white;
   font-weight: 100;
@@ -283,6 +276,25 @@ footer a {
 .socials p {
   font-size: 120%;
   font-weight: 300;
+  padding: 0.3em;
+}
+
+.socials i {
+  display: inline;
+  font-size: 200%;
+  opacity: 90%;
+  padding: 0.4em;
+}
+
+.socials a {
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+.socials a:hover,
+.socials a:focus,
+.socials a:active {
+  transform: scale(1.1);
 }
 
 /* Responsivness */
@@ -294,6 +306,27 @@ footer a {
 }
 
 @media screen and (max-width: 1024px) {
+  nav {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+  }
+
+  .navbarLogo {
+    padding-left: 0rem;
+    min-width: 80px;
+  }
+
+  .eventsNav,
+  .contactNav {
+    margin-right: 1em;
+    padding: 0.5em 0.3em;
+    font-size: 1.1em;
+  }
+
+  .eventsNav {
+    margin-right: 0em;
+  }
+
   .landingSection {
     background-position: 20%;
   }
@@ -303,6 +336,11 @@ footer a {
     top: 5em;
     right: 0em;
   }
+
+  .upcomingEventsHeader {
+    font-size: 3em;
+  }
+
   .upcomingEventsBtn,
   .contactUsBtn {
     font-size: 1.8em;
@@ -320,10 +358,23 @@ footer a {
   .logoNoBackground {
     width: 80%;
     padding-bottom: 30em;
+    opacity: 0;
   }
 
   .events {
     grid-template-columns: 1fr;
+  }
+
+  .eventCard {
+    padding-top: 4em;
+  }
+
+  .eventCard:first-child {
+    padding-top: 1em;
+  }
+
+  .contactUsWrapper {
+    flex-direction: column;
   }
 
   @media screen and (max-height: 800px) {

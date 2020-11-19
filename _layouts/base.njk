@@ -7,6 +7,9 @@ sideTitle: 'Mosgren - Official Site'
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mosgren is a norwegian band based from
+    Lillesand, Norway. Get to know or contact Mosgren here! Listen to the newest
+    song Jericho on Spotify, iTunes or YouTube!"">
     <link rel="stylesheet" href="/assets/styles/style.css" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap"
@@ -26,78 +29,11 @@ sideTitle: 'Mosgren - Official Site'
     <footer>
       <section class="socials">
         <p>Discover us on:</p>
-        <a href="#insta"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="45"
-            height="45"
-            fill="#ffffff"
-            viewBox="0 0 256 256"
-          >
-            <rect width="256" height="256" fill="none"></rect>
-            <circle
-              cx="128"
-              cy="128"
-              r="40"
-              fill="none"
-              stroke="#ffffff"
-              stroke-miterlimit="10"
-              stroke-width="8"
-            ></circle>
-            <rect
-              x="36"
-              y="36"
-              width="184"
-              height="184"
-              rx="48"
-              stroke-width="8"
-              stroke="#ffffff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              fill="none"
-            ></rect>
-            <circle cx="180" cy="76" r="12"></circle></svg
+        {%- for item in social -%}
+        <a href="{{ item.url }}" target="_blank"
+          ><i class="{{ item.iconClass }}"></i
         ></a>
-
-        <a href="#fb"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="45"
-            height="45"
-            fill="#ffffff"
-            viewBox="0 0 256 256"
-          >
-            <rect width="256" height="256" fill="none"></rect>
-            <circle
-              cx="128"
-              cy="128"
-              r="96"
-              fill="none"
-              stroke="#ffffff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="8"
-            ></circle>
-            <path
-              d="M168,88.00094H152a24,24,0,0,0-24,24v112"
-              fill="none"
-              stroke="#ffffff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="8"
-            ></path>
-            <line
-              x1="96"
-              y1="144.00094"
-              x2="160"
-              y2="144.00094"
-              fill="none"
-              stroke="#ffffff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="8"
-            ></line></svg
-        ></a>
+        {%- endfor -%}
       </section>
       <p>&copy; Mosgren, 2020</p>
       <p>
