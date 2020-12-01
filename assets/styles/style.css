@@ -358,6 +358,7 @@ footer a {
   .navbarLogo {
     padding-left: 0rem;
     min-width: 80px;
+    max-width: 90px;
   }
 
   .eventsNav,
