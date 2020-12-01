@@ -20,6 +20,7 @@ html {
   min-height: 100vh;
   background-color: var(--background-color);
   color: white;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -94,7 +95,8 @@ nav {
 nav.post {
   z-index: 0;
   position: static;
-  width: auto;
+  padding-right: 0;
+  width: 100%;
 }
 
 .navbarLogo {
@@ -353,6 +355,7 @@ footer a {
   nav {
     padding-bottom: 0.5em;
     padding-top: 0.5em;
+    max-height: 40px;
   }
 
   .navbarLogo {
