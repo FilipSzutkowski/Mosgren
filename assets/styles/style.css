@@ -82,7 +82,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  max-height: 90px;
+  max-height: 55px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
