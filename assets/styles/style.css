@@ -69,7 +69,7 @@ main.post {
   padding-bottom: 1em;
 }
 
-.post img {
+main.post img {
   border-radius: 30px;
 }
 
@@ -104,8 +104,8 @@ nav.post {
   padding-left: 1em;
 }
 
-.navbarLogo a {
-  fill: white;
+.navbarLogo:hover {
+  cursor: pointer;
 }
 
 .eventsNav,
