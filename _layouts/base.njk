@@ -6,7 +6,10 @@ sideTitle: 'Mosgren - Official Site'
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="Mosgren is a norwegian band based from
     Lillesand, Norway. Get to know or contact Mosgren here! Listen to the newest
     song Jericho on Spotify, iTunes or YouTube!"">
@@ -24,27 +27,31 @@ sideTitle: 'Mosgren - Official Site'
     <title>{{ sideTitle }}</title>
   </head>
   <body>
-    {{ content | safe }}
+    <div class="siteWrapper">
+      <div class="contentWrapper">
+        {{ content | safe }}
+      </div>
 
-    <footer>
-      <section class="socials">
-        <p>Discover us on:</p>
-        {%- for item in social -%}
-        <a href="{{ item.url }}" target="_blank"
-          ><i class="{{ item.iconClass }}"></i
-        ></a>
-        {%- endfor -%}
-      </section>
-      <p>&copy; Mosgren, 2020</p>
-      <p>
-        Developed by
-        <a
-          href="https://www.linkedin.com/in/filip-piotr-szutkowski/"
-          target="_blank"
-        >
-          Filip Szutkowski</a
-        >.
-      </p>
-    </footer>
+      <footer>
+        <section class="socials">
+          <p>Discover us on:</p>
+          {%- for item in social -%}
+          <a href="{{ item.url }}" target="_blank"
+            ><i class="{{ item.iconClass }}"></i
+          ></a>
+          {%- endfor -%}
+        </section>
+        <p>&copy; Mosgren, 2020</p>
+        <p>
+          Developed by
+          <a
+            href="https://www.linkedin.com/in/filip-piotr-szutkowski/"
+            target="_blank"
+          >
+            Filip Szutkowski</a
+          >.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
