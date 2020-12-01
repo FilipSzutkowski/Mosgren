@@ -12,5 +12,9 @@ layout: base
 <main class="post">
   <h1 class="upcomingEventsHeader">{{ title }}</h1>
   <img src="{{ thumbnail }}" alt="thumbnail picture">
-  <section>{{ content | safe }}</section> 
+  
+  <section>
+    <p><strong>{{ summary }}</strong></p>
+    {{ content | safe }}
+  </section> 
 </main>
