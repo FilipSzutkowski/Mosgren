@@ -1,9 +1,12 @@
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('assets');
+  eleventyConfig.addPassthroughCopy('admin');
   eleventyConfig.addLayoutAlias('base', 'base.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
-  eleventyConfig.addWatchTarget('assets/styles/style.css');
 
+  eleventyConfig.addFilter('limit', (array, qty) =>
+    qty < 0 ? array.slice(qty) : array.slice(0, qty)
+  );
   eleventyConfig.addFilter('simpleDate', (dateObject) => {
     const options = {
       weekday: 'long',

@@ -24,7 +24,7 @@ layout: base
     <h1 class="upcomingEventsHeader">The upcoming events</h1>
     <div class="events">
 
-      {%- for item in collections.post | reverse -%}
+      {%- for item in collections.post | reverse | limit(3) -%}
       <article class="eventCard">
         <img src="{{item.data.thumbnail}}" alt="{{item.title}}">
         <p>{{ item.date | simpleDate}}</p>

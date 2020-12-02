@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+
+media_folder: 'assets/images'
+
+collections:
+  - name: 'posts'
+    label: 'Events'
+    folder: 'posts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Thumbnail image', name: 'thumbnail', widget: 'image' }
+      - {
+          label: 'Summary',
+          name: 'summary',
+          widget: 'text',
+          default: 'Short description of the post',
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
