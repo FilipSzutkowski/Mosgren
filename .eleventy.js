@@ -9,6 +9,7 @@ module.exports = (eleventyConfig) => {
   );
   eleventyConfig.addFilter('simpleDate', (dateObject) => {
     const options = {
+      timeZone: 'Europe/Oslo',
       weekday: 'long',
       year: 'numeric',
       month: 'long',
