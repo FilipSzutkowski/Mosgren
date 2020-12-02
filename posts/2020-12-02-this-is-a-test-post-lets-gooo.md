@@ -1,7 +1,7 @@
 ---
 layout: post
 title: This is a test post, let's gooo
-date: 2020-12-02T11:50:27.412Z
+date: 2020-12-02T19:47:27.999Z
 thumbnail: /assets/images/1-by-1-1024x1024.png
 summary: Kid, I've flown from one side of this galaxy to the other. I've seen a
   lot of strange stuff, but I've never seen anything to make me believe there's
@@ -15,8 +15,6 @@ Look, I ain't in this for your revolution, and I'm not in it for you, Princess. 
 The plans you refer to will soon be back in our hands. You don't believe in the Force, do you? I find your lack of faith disturbing. The Force is strong with this one. I have you now. Dantooine. They're on Dantooine.
 
 ### I find your lack of faith disturbing.
-
-![](/assets/images/landingLogo.svg)
 
 But with the blast shield down, I can't even see! How am I supposed to fight? The more you tighten your grip, Tarkin, the more star systems will slip through your fingers. What!? What?! I have traced the Rebel spies to her. Now she is my only link to finding their secret base.
 
