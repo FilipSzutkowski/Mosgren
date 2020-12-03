@@ -7,11 +7,25 @@ eleventyExcludeFromCollections: true
 permalink: /posts/{{pagination.pageNumber}}/
 ---
 
+<nav aria-label="navbar" class="post">
+  <a href="/">
+    <img
+      src="/assets/images/landingLogo.svg"
+      alt="Mosgren logo, click to go to the main page"
+      class="navbarLogo"
+  /></a>
+  <a href="/#upcomingEvents" class="eventsNav">Events</a>
+  <a href="/posts/" class="eventsNav">About</a>
+  <a href="/#contactUs" class="contactNav">Contact</a>
+</nav>
+
 <h1 class="upcomingEventsHeader">All Events</h1>
 
 <section id="upcomingEvents" class="allPosts">
-  <div class="events">
 
+{% include "pagination.njk" %}
+
+  <div class="events">
 {%- for item in pagination.items -%}
 
 <article class="eventCard">
@@ -25,4 +39,7 @@ permalink: /posts/{{pagination.pageNumber}}/
 {%- endfor -%}
 
   </div>
+
+{% include "pagination.njk" %}
+
 </section>

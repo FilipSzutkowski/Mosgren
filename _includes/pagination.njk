@@ -1,0 +1,31 @@
+<div aria-label="Post pagination" class="paginationWrapper">
+  <ul class="pagination">
+
+  {% if pagination.previous %}
+
+  <li><a href="{{ pagination.previous | url }}"><span aria-hidden="true">«</span></a></li>
+
+  {% else %}
+
+  <li class="disabledPagination"><a href="#"><span aria-hidden="true">«</span></a></li>
+
+  {% endif %}
+
+  {% for link in pagination.links %}
+
+  <li class="{% if (pagination.pageNumber +1) == loop.index %} activePaginationLink {% endif %}" aria-label="Page number"><a href="{{ link | url }}">{{ loop.index }}</a></li>
+
+  {% endfor %}
+
+  {% if pagination.next %}
+
+  <li><a href="{{ pagination.next | url }}"><span aria-hidden="true">»</span></a></li>
+
+  {% else %}
+
+  <li class="disabledPagination"><a href="#"><span aria-hidden="true">»</span></a></li>
+        
+  {% endif %}
+
+  </ul>
+</div>

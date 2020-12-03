@@ -195,6 +195,21 @@ nav.post {
   padding: 0.5em 0.5em;
 }
 
+section#upcomingEvents .upcomingEventsHeader {
+  padding-bottom: 0;
+}
+
+h3.viewAllLink {
+  font-weight: 100;
+  text-align: right;
+  padding-right: 2em;
+  padding-bottom: 2em;
+}
+
+h3.viewAllLink a {
+  color: white;
+}
+
 .events {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -354,6 +369,59 @@ footer a {
   transform: scale(1.1);
 }
 
+/* Pagination -------------------------------------*/
+
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.paginationWrapper:first-of-type {
+  padding-bottom: 2em;
+}
+
+.paginationWrapper:last-of-type {
+  padding-top: 2em;
+}
+
+.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.pagination li {
+  margin: 0 1px;
+  padding: 2em 0 2em 0;
+}
+
+.pagination li a {
+  background-color: var(--main-color);
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 5px;
+  border: var(--hover-color) 1px solid;
+  color: white;
+  text-decoration: none;
+}
+
+.pagination li a:hover {
+  background-color: var(--hover-color);
+}
+
+li.activePaginationLink a {
+  background-color: #00924e;
+}
+
+li.disabledPagination a {
+  border-color: #00160c;
+  background-color: #00160c;
+}
+
+li.disabledPagination a:hover {
+  cursor: default;
+}
+
 /* Responsivness */
 
 @media screen and (max-width: 1204px) {
@@ -374,8 +442,10 @@ footer a {
     padding-left: 0rem;
     min-width: 80px;
     max-width: 90px;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+  }
+
+  nav a:first-child {
+    padding-left: 0;
   }
 
   .eventsNav,
@@ -401,6 +471,11 @@ footer a {
 
   .upcomingEventsHeader {
     font-size: 3em;
+  }
+
+  h3.viewAllLink {
+    padding-right: 1.5em;
+    padding-bottom: 1.5em;
   }
 
   .upcomingEventsBtn,
@@ -479,7 +554,7 @@ footer a {
   }
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 2000px) {
   .eventCard > img {
     height: 550px;
     width: 550px;

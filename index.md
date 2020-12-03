@@ -23,6 +23,7 @@ layout: base
   
   <section id="upcomingEvents">
     <h1 class="upcomingEventsHeader">Events</h1>
+    <h3 class="viewAllLink"><a href="/posts/0">View all events</a></h3>
     <div class="events">
 
       {%- for item in collections.post | reverse | limit(3) -%}
