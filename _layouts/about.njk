@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+<nav aria-label="navbar" class="post">
+  <a href="/">
+    <img
+      src="/assets/images/landingLogo.svg"
+      alt="Mosgren logo, click to go to the main page"
+      class="navbarLogo"
+  /></a>
+  <a href="/#upcomingEvents" class="eventsNav">Events</a>
+  <a href="#" class="eventsNav">About</a>
+  <a href="/#contactUs" class="contactNav">Contact</a>
+</nav>
+
+<main class="post">
+  <h1 class="upcomingEventsHeader">{{ title }}</h1>
+  <img class="aboutImg" src="{{ thumbnail }}" alt="thumbnail picture" />
+
+  <section>
+    <p>
+      <strong>{{ summary }}</strong>
+    </p>
+    {{ content | safe }}
+  </section>
+</main>

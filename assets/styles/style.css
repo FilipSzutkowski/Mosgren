@@ -80,6 +80,12 @@ main.post img:first-of-type {
   border-radius: 30px;
 }
 
+main.post img.aboutImg:first-of-type {
+  height: 100%;
+  width: 600px;
+  border-radius: 30px;
+}
+
 .post .upcomingEventsHeader {
   text-align: center;
 }
@@ -530,6 +536,18 @@ li.disabledPagination a:hover {
     width: 300px;
   }
 
+  main.post img.aboutImg:first-of-type {
+    width: 300px;
+    border-radius: 30px;
+  }
+
+  @media screen and (min-width: 500px) {
+    main.post img.aboutImg:first-of-type {
+      width: 450px;
+      border-radius: 30px;
+    }
+  }
+
   @media screen and (max-height: 800px) {
     .logoNoBackground {
       padding-bottom: 20em;
@@ -552,6 +570,10 @@ li.disabledPagination a:hover {
     height: 200px;
     width: 200px;
   }
+  main.post img.aboutImg:first-of-type {
+    width: 200px;
+    border-radius: 30px;
+  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -562,5 +584,9 @@ li.disabledPagination a:hover {
   main.post img:first-of-type {
     height: 550px;
     width: 550px;
+  }
+  main.post img.aboutImg:first-of-type {
+    width: 750px;
+    border-radius: 30px;
   }
 }

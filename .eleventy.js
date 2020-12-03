@@ -3,6 +3,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('admin');
   eleventyConfig.addLayoutAlias('base', 'base.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
+  eleventyConfig.addLayoutAlias('about', 'about.njk');
 
   eleventyConfig.addFilter('limit', (array, qty) =>
     qty < 0 ? array.slice(qty) : array.slice(0, qty)

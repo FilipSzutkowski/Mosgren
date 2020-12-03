@@ -5,7 +5,7 @@ layout: base
 <nav aria-label="navbar">
   <a href="#"><img src="./assets/images/landingLogo.svg" alt="Mosgren logo, click to go to the main page" class="navbarLogo"></a>
   <a href="#upcomingEvents" class="eventsNav">Events</a>
-  <a href="/posts/" class="eventsNav">About</a>
+  <a href="/posts/about" class="eventsNav">About</a>
   <a href="#contactUs" class="contactNav">Contact</a>
 </nav>
 

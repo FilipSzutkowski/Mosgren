@@ -1,4 +1,5 @@
 ---
+title: 'DONT TOUCH THIS.'
 layout: base
 pagination:
   data: collections.post
@@ -15,7 +16,7 @@ permalink: /posts/{{pagination.pageNumber}}/
       class="navbarLogo"
   /></a>
   <a href="/#upcomingEvents" class="eventsNav">Events</a>
-  <a href="/posts/" class="eventsNav">About</a>
+  <a href="/posts/about" class="eventsNav">About</a>
   <a href="/#contactUs" class="contactNav">Contact</a>
 </nav>
 
