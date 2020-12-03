@@ -2,7 +2,7 @@
   --main-color: #006837;
   --hover-color: #008145;
   --background-color: #000d04;
-  --navbar-color: #000d0438;
+  --navbar-color: #000d049d;
 }
 
 * {
@@ -52,7 +52,11 @@ button:active {
 main {
   margin-top: 2em;
 }
-/* Post side --------------------------------------------- */
+/* Post sides --------------------------------------------- */
+#upcomingEvents.allPosts {
+  padding-bottom: 3em;
+}
+
 main.post {
   text-align: center;
   margin-top: auto;
@@ -70,13 +74,16 @@ main.post {
   padding-bottom: 1em;
 }
 
-main.post img {
+main.post img:first-of-type {
+  height: 400px;
+  width: 400px;
   border-radius: 30px;
 }
 
 .post .upcomingEventsHeader {
   text-align: center;
 }
+
 /* Navbar ---------------------------------------------------- */
 nav {
   z-index: 1;
@@ -92,6 +99,11 @@ nav {
   background-color: var(--navbar-color);
 }
 
+nav a:first-child {
+  margin-right: auto;
+  padding-left: 1em;
+}
+
 nav.post {
   z-index: 0;
   position: static;
@@ -100,14 +112,11 @@ nav.post {
 }
 
 .navbarLogo {
+  position: relative;
+  top: 25%;
+  width: 100%;
   min-width: 135px;
   max-width: 135px;
-  margin-right: auto;
-  padding-left: 1em;
-}
-
-.navbarLogo:hover {
-  cursor: pointer;
 }
 
 .eventsNav,
@@ -189,6 +198,7 @@ nav.post {
 .events {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 3em;
   justify-items: center;
 }
 
@@ -213,7 +223,8 @@ nav.post {
 }
 
 .eventCard > img {
-  max-width: 400px;
+  height: 400px;
+  width: 400px;
   border-radius: 30px;
 }
 
@@ -347,7 +358,8 @@ footer a {
 
 @media screen and (max-width: 1204px) {
   .eventCard > img {
-    max-width: 300px;
+    height: 300px;
+    width: 300px;
   }
 }
 
@@ -438,8 +450,9 @@ footer a {
     margin-right: auto;
   }
 
-  .post img {
-    max-width: 300px;
+  main.post img:first-of-type {
+    height: 300px;
+    width: 300px;
   }
 
   @media screen and (max-height: 800px) {
@@ -452,5 +465,27 @@ footer a {
     .logoNoBackground {
       padding-bottom: 15em;
     }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .eventCard > img {
+    height: 200px;
+    width: 200px;
+  }
+  main.post img:first-of-type {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .eventCard > img {
+    height: 550px;
+    width: 550px;
+  }
+  main.post img:first-of-type {
+    height: 550px;
+    width: 550px;
   }
 }

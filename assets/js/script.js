@@ -1,5 +1,3 @@
-const imgLogo = document.querySelector('nav img.navbarLogo');
-
 if (window.netlifyIdentity) {
   window.netlifyIdentity.on('init', (user) => {
     if (!user) {
@@ -9,7 +7,3 @@ if (window.netlifyIdentity) {
     }
   });
 }
-
-imgLogo.onclick = () => {
-  location.href = '/';
-};

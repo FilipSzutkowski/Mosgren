@@ -18,7 +18,7 @@ module.exports = (eleventyConfig) => {
       minute: 'numeric',
       hour12: false,
     };
-    return new Intl.DateTimeFormat('local', options).format(dateObject);
+    return new Intl.DateTimeFormat('default', options).format(dateObject);
   });
 
   return {
