@@ -22,12 +22,25 @@ collections:
           default: 'Short description of the post',
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-
-  - name: 'social'
-    label: 'Social'
-    folder: '_data'
-    create: false
-    fields:
-      - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Class', name: 'iconClass', widget: 'string' }
-      - { label: 'Url', name: 'url', widget: 'string' }
+  - label: 'Pages'
+    name: 'pages'
+    files:
+      - label: 'Main page'
+        name: 'index'
+        file: 'index.md'
+        fields:
+          - {
+              label: 'Layout',
+              name: 'layout',
+              widget: 'hidden',
+              default: 'post',
+            }
+          - { label: 'Email', name: 'email', widget: 'string' }
+          - { label: 'Phone Number', name: 'phoneNumber', widget: 'string' }
+      - label: 'Social'
+        name: 'social'
+        file: '_data/social.json'
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string' }
+          - { label: 'Icon', name: 'iconClass', widget: 'string' }
+          - { label: 'Link', name: 'url', widget: 'string' }
