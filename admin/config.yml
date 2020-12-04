@@ -39,11 +39,11 @@ collections:
           - { label: 'Picture', name: 'thumbnail', widget: 'image' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'Social links'
-        name: 'socialLinks'
+        name: 'social'
         file: '_data/social.json'
         fields:
           - label: 'List of social links'
-            name: 'social'
+            name: 'socialList'
             widget: 'list'
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
