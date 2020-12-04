@@ -24,8 +24,10 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'social'
-    label: 'Socials'
+    label: 'Social'
     folder: '_data'
     create: false
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Class', name: 'iconClass', widget: 'string' }
+      - { label: 'Url', name: 'url', widget: 'string' }
