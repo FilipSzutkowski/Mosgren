@@ -25,9 +25,16 @@ collections:
   - label: 'Pages'
     name: 'pages'
     files:
-      - label: 'Main page'
+      - label: 'Main page - Email and phone number'
         name: 'index'
         file: 'index.md'
         fields:
           - { label: 'Email', name: 'email', widget: 'string' }
           - { label: 'Phone Number', name: 'phoneNumber', widget: 'string' }
+      - label: 'About page'
+        name: 'about'
+        file: 'posts/about.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Picture', name: 'thumbnail', widget: 'image' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }

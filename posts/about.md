@@ -1,11 +1,10 @@
 ---
 layout: about
 title: About Mosgren
-date: 2020-12-03T12:33:21.591Z
 thumbnail: /assets/images/landing.jpg
 eleventyExcludeFromCollections: true
-summary: " "
 ---
+
 # Look, I ain't in this for your revolution, and I'm not in it for you, Princess. I expect to be well paid. I'm in it for the money.
 
 Still, she's got a lot of spirit. I don't know, what do you think? Look, I ain't in this for your revolution, and I'm not in it for you, Princess. I expect to be well paid. I'm in it for the money. What!?
