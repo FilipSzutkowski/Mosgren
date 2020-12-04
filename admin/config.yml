@@ -22,3 +22,10 @@ collections:
           default: 'Short description of the post',
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'social'
+    label: 'Socials'
+    folder: '_data'
+    create: false
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
