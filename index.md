@@ -1,7 +1,7 @@
 ---
 layout: base
-email: 'kmosgren@online.no'
-phoneNumber: '+4793091231'
+email: kmosgren@online.no
+phoneNumber: "+4799999999"
 ---
 
 <nav aria-label="navbar">
